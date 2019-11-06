@@ -1,78 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="logo192.png" />
-    <link rel="stylesheet" href="main.css"/>
-    
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Expense Tracker</title>
-  </head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
 <body>
-<div id="root"></div>
-<script src="/index.js"></script>
-<h1 class="h1">ExPenSe TrackEr</h1>
-<div id="form">
-<form>
-  <div>
-    <span>Expense_Type:</span> 
-      <select name="type" class="expensetype">
-          <option value="cashless">Cashless</option>
-          <option value="cash">Cash</option>
-        </select>
-  </div>
-  
-  <div>
-    <span>Category:</span> <select name="category" class="expensetype">
-                                    <option value="fixed">Fixed</option>
-                                    <option value="variable">Variable</option> 
-  </div>
-  <input type="text" name="subcategory" placeholder="subcategory" class="expensetype">
-  
-  <div>
-    <span>Date:</span> <input type="date" name="date" class="expensetype">
-  </div>
-  
-  <div>
-    <span>Amount:</span> <input type="number" name="amount" placeholder="$20" class="expensetype">
-  </div>
-  
-</form>
-</div>
-
-<div id="button" class="button"><span>Add a new expense</span></div>
-
-<table class="table">
-  <tr>
-    <th id="type" class="center">type</th>
-    <th>name</th>
-    <th id="date">date</th>
-    <th style="text-align: right" id="amount">amount</th>
-  </tr>
-  <tr id="if-empty">
-    <td colspan="4"><span>Your added items will show up here!</span></td>
-  </tr>
-
-</table>
+    <div id="app"></div>
 </body>
+
 </html>
