@@ -13,4 +13,3 @@ import 'main.css';
 
 ReactDOM.render(<App />, document.getElementById('app'));
 
-ReactDom.render(<h1>Expense Tracker</h1>,document.getElementById("title"))
