@@ -36,20 +36,20 @@ function App() {
     <div id="button" class="button"><span>Add a new expense</span></div>
 
     <table class="table">
-      <tr>
-        <th id="type" class="center">type</th>
-        <th>name</th>
+    <tr>
+    <th id="type" >type</th>
+    <th>name</th>
         <th id="date">date</th>
-        <th style="text-align: right" id="amount">amount</th>
-      </tr>
-      <tr id="if-empty">
-        <td colspan="4"><span>Your added items will show up here!</span></td>
-      </tr>
-    
+        <th id="amount">amount</th>
+    </tr>
+  
+    <tr id="if-empty">
+      <td colspan="4"><span>Your added items will show up here!</span></td>
+    </tr>
     </table>
-
-
-
+    
+    
+    
     </div>
     
   );
